@@ -1,0 +1,62 @@
+﻿@charset "utf-8";
+
+*{margin:0; padding:0;}
+
+.clear{clear:both;}
+
+/* 클래스 선택자 */
+.wrap{width:600px; margin:0 auto;}  /*박스를 중앙으로 정렬하는 조건*/ 
+
+/* 태그선택자 : 태그의 요소명으로 박스를 선택하는 것이다. */
+body { background:#338cd5;}
+header{ height:100px; background:#b6ff00; }
+.logo {
+    float:left;width:168px; height:25px; padding:25px 0 0 30px;
+}
+.topmenu{float:right; }
+
+.topmenu ul {
+    list-style:circle; /*블릿을 없애는 스타일 속성과 값*/
+}
+.topmenu ul li {
+    float: left; /*위에서 아래로 배치되어있는 박스를 왼쪽에서 오른쪽으로 배치시킨다.*/
+    padding: 0 15px;
+}
+
+.topmenu ul li a {
+    color:#333; /*텍스트 색상*/
+    text-decoration:none; /*언더바 제거*/
+}
+
+nav {height: 45px;background: #ff0000;}
+nav ul{list-style:none;}
+    nav ul li {
+        float: left;
+    }
+nav ul li a{ /*inline-block*/
+    display:block;height:45px;color:#fff;padding:0 10px;line-height:45px;
+    text-decoration:none; text-transform:uppercase;
+    transition:all 0.4s ease-in;
+}
+
+nav ul li a:hover {color:#fc0;background:#338cd5;} /*커서를 올렸을때 변화*/
+
+aside {
+    float:left;
+    width: 200px;
+    height: 500px;
+    background: #b6ff00;
+}
+
+section {
+    float:right;
+    width:400px;
+    height: 500px;
+    background: #808080;
+}
+article { 
+    float:left; width:33.33%; height:250px; background:#0005ff }
+article:first-child,article:last-child{background:#026322}
+footer{
+    height:100px; background:#000000;
+}

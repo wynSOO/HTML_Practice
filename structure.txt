@@ -1,0 +1,61 @@
+structure : WebContent를 담는다.
+
+
+WebContent
+1.text : <h1>~<h6>,<p>
+2.image : <img src="상대경로">
+3. video : <video src="" poster=""contrls>
+4. audio : <audio src="">
+
+
+* 공간분할태그 :<div>,<span>
+1.블록형 : width(0),height(0),margin(0),padding(0), "개행"(위에서 아래로)
+2.인라인형: width(X),height(X),margin(X),padding(X), "개행X"(좌에서 우로)
+3.인라인-블록형 : width(0),height(0),margin(0),padding(0),"개행X"(좌에서 우로)
+
+	>>형변환방법 display:block,inline,inline-block
+
+
+
+<input> =>입력양식폼태그
+
+
+*웹콘텐츠
+1.text => h1~h3(bold),p,<br>,<strong>,<marker>,<em>,<sup>,<sub>,<q>
+2.image
+   => <img src="상대경로">
+
+*BODY 시멘틱태그
+<header><nav><section><aside><article><footer>
+
+
+
+
+* 기본구조
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<meta name = "viewport" content="width=device-width,initial-scale=1.0">
+<!--
+	뷰포트를 사용하지 않으면 반응형 웹을 구현할수 없다.
+	width=device-width:웹콘텐츠의 너비를 단말기의 너비에 맞춘다.
+	initial-scale=1.0:웹콘텐츠의 비율을 1:1로 맞춘다.
+-->
+<!--
+	미디어쿼리는 박스의 너비를 장비의 너비 값에 따라 지정하는것을 말한다.
+	<style>
+		@media (min-width:1600px){
+			.wrap{width:1600px;}
+			}
+		@media (min-width:1050px) and (max-width:1599px){
+			.wrap{width:1000px;}
+			}
+		@media ((max-width:1049px){
+			.wrap{width:100%;}
+			}
+	</style>
+	<div class = "wrap"></div>
+-->
+</head>
+</html>

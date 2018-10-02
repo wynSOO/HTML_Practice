@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>입력양식 폼 태그</title>
+</head>
+<body>
+    <select><!--콤보박스-->
+        <option>김밥</option>
+        <option>떡볶이</option>
+        <option>순대</option>
+        <option>어묵</option>
+    </select>
+
+    <select multiple="multiple">
+        <option>김밥</option>
+        <option>떡볶이</option>
+        <option>순대</option>
+        <option>어묵</option>
+    </select>
+
+    <select>
+        <optgroup label="HTML5">
+            <option>시멘틱 태그</option>
+            <option>공간분할태그</option>
+            <option>목록+항목태그</option>
+            <option>멀티미디어태그</option>
+        </optgroup>
+        <optgroup label="CSS3">
+            <option>텍스트쉐도우</option>
+            <option>박스쉐도우</option>
+            <option>그레디언트</option>
+            <option>멀티 배경 이미지</option>
+        </optgroup>
+    </select>
+
+    <!--연관있는 입력양식 그룹으로 묶기-->
+    <form method="post" action="#">
+        <fieldset>
+            <legend>인증 양식 폼</legend>
+            <input type="text" name="name" placeholder="이름" autofocus required/>
+            <input type="email" name="email" placeholder="이메일"/>
+            <input type="submit" value="전송" />
+        </fieldset>
+    </form>
+
+    <!--HTML5에서 추가된 입력양식 폼 태그-->
+
+</body>
+</html>

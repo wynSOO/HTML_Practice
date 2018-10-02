@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<!-- 선언문, 문서형식이 html이다.  -->
+
+<html>
+<!-- html문서의 시작과 끝을 기술한다. -->
+<!-- html은 머리(<head>)와 몸통(<body>)으로 이루어져있다. -->
+<head>
+    <!-- <head>에는 문자인코딩(meta), 문서정보(meta), 외부스타일시트(link), 외부 제이쿼리(script) 포함 -->
+    <meta charset="utf-8" /><!-- 없으면 한글이 깨짐 -->
+    <title>HTML5 START</title><!-- 브라우저의 상태표시에 표시--> 
+    <link rel="shotcuticon" href="imgs/favicon.ico" />
+    <link rel="stylesheet" href="css/style1.css" />
+    <!-- link태그를 사용하여 외부에 있는 스타일 시트 파일을 포함시킨다. -->
+    
+</head>
+<!-- 웹표준으로 웹사이트를 제작하는 이유
+    1.바디태그 내부에 시멘틱 태그를 사용함으로 브라우저 해석기의 성능 향상때문이다.
+    2.웹접근성(Web Accessibility) 장애인 및 고령자 등을 포함한 모든 사람, 다양한 플랫폼(스마트폰, 태블릿, 데스크탑) 및 장치,
+      다양한 웹 브라우저(크롬, 사파리, 파이어폭스, 오페라) 등의 모든 환경에서 정보를 차별 및 제한 없이 동등한 서비스를 제공 할 수 있기 때문이다.
+
+    웹표준에서 추가된 태그(구조, Structure)가 있으며, 추가된 태그는 시멘틱 태그, <video>태그, <audio>태그, 입력양식 태그 13개가 새롭게 추가되었다.
+    웹표준은 구조(HTML5)와 표현(스타일,CSS3-XML)과 동작(기능,jQuery-JavaScript 라이브러리-JAVA)을 나누어 기술(분리)한다. > 유지보수면에서는 많은 편리성을 제공한다. -->
+<!-- 외부에있는 jQuery 파일 포함시킬때, 내부에 스크립트 작성할때 scrpit 태그를 작성한다 -->
+<body>
+    <!-- 웹브라우저에 표시되는 부분을 기술한다. -->
+    <div class="wrap">
+        <!--로고, 검색, 로그인, 회원가입, 사이트맵, 언어선택 등으로 구성된 영역-->
+        <header>
+            <div class="logo"><img src="imgs/logo.png" alt="젠라이징로고" /></div>
+            <div class="topmenu">
+                <ul>
+                    <!--목록태그-->
+                    <li><a href="#">로그인</a></li>   <!--항목태그-->
+                    <li><a href="#">회원가입</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <nav>
+            <!--내비게이션바 : 메인메뉴의 링크를 별도로 모아둔 곳-->
+            <ul>
+                <li><a href="#">zen3-QuadCore</a></li>
+                <li><a href="#">zen5-HexaCore</a></li>
+                <li><a href="#">zen7-OctaCore</a></li>
+            </ul>
+        </nav>
+
+        <aside></aside> <!--주요내용과 관련이 없는 분리된 내용(광고,서브메뉴)를 묶어놓은것-->
+        <section> <!--본문내용 : 같은 성격의 내용을 묶어놓은 것-->
+            <article></article>
+            <article></article>
+            <article></article>
+        </section>
+        <div class="clear"></div>
+        <footer></footer>
+    </div>
+</body>
+</html><!-- html을 종료한다. -->
+<!--웹 표준 유효성 검사
+    HTML5 문법에 적절한지 검사를 해주는 사이트 http://validator.kldp.org/
+    CSS3 코딩이 문법에 적절하닞 검사를 해주는 사이트 http://jigsaw.w3.org/css-validator
+    -->

@@ -1,0 +1,47 @@
+﻿@charset "utf-8";
+
+*{margin:0;padding:0;box-sizing:border-box;}
+/*
+    box-sizing:border-box 
+    문서의 너비값에 padding의 가로여백,테두리의 가로 두께값을 포함시킨다.
+
+*/
+.clear{
+    clear:both;
+}
+.wrap {width:900px;margin:0 auto;}
+
+
+
+.box{float:left;/*박스를 좌에서 우로 배치*/
+ width:300px; height:100px; padding:20px; background:#ff0000;border:3px solid #00ffff;
+}
+
+ul{
+    list-style:none;/*블릿을 없앤다*/
+    width:500px; 
+    height:100px;
+    margin:50px auto;
+}
+
+ul li{
+    float:left;/*박스를 좌에서 우로*/
+    width:100px;/*박스의 너비값*/
+    height:100px;/*박스의 높이값*/
+    font-size:24px;/*텍스트의 크기*/
+    color:beige;/*텍스트 색상*/
+    text-align:center;/*텍스트 수평정렬:중앙정렬*/
+    line-height:100px;/*텍스트 수직정렬:중앙정렬*/
+    text-transform:uppercase;/*영문자를 모두 대문자로 전환*/
+    background:#00ffff;/*박스의 배경색 지정*/
+    text-shadow:1px 1px 3px #000;/*텍스트 그림자효과*/
+}
+
+ul li:nth-child(2){
+    background:#ffd800;
+}
+
+/*
+    태그선택자, 자식선택자, 자손선택자, 구조선택자를 사용하는 것은
+    박스에 이름을 붙이지 않기 위해서다.
+*/

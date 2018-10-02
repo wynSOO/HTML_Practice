@@ -1,0 +1,107 @@
+﻿@charset "utf-8";
+
+*{margin:0;padding:0;}
+
+.clear{clear:both;}
+
+/* 클래스 선택자 */
+.wrap{width:600px;margin:0 auto;} /*박스를 중앙으로 정렬하는 조건 auto는 컴퓨터가 알아서 중앙으로 조절*/
+
+/*태그 선택자 : 태그의 요소명으로 박스를 선택하는 것이다.*/
+body{background:#808080;}
+
+header{width:600px;
+       height:100px;
+       background:#ffffff;
+}
+
+.logo{
+    float:left;
+    width:148px;
+    padding:30px 0 0 30px;
+   
+}
+.logo img{width:100%;}
+
+
+.topmenu{
+   float:right;
+}
+.topmenu ul{
+    list-style:none; /*블릿을 없애는 스타일 속성과 값*/
+}
+.topmenu ul li{
+    float:left;/*위에서 아래로 배치되어 있는 박스를 왼쪽에서 오른쪽으로 배치시킨다.*/
+    padding:0 15px;
+}
+.topmenu ul li a{
+     color:#333;  /*텍스트 색상*/
+     text-decoration:none; /*텍스트 언더바 제거*/
+}
+
+
+
+nav{height:45px; background:#0026ff;}
+nav ul{list-style:none;}
+nav ul li{float:left;}
+nav ul li a{/*inline-block*/
+    display:block; height:45px; color:#FFF; padding:0 10px; line-height:45px;
+    text-decoration:none; text-transform:uppercase;
+    transition:all 0.4s ease-in;
+}
+nav ul li a:hover{
+    color:#fc0; background:#b6ff00;/*커서를 올려서 변화*/
+}
+
+aside{
+    float:left;
+    width:200px;
+    height:500px;
+    background:#b6ff00;
+}
+
+section {
+    float:right;
+    width:400px;
+    height: 500px;
+    background: #ff006e;
+}
+
+article {
+    float: left;
+    width: 33.33%;
+    height: 250px;
+    background: #0005ff
+}
+
+    article:first-child, article:last-child {
+        background: #026322
+    }
+
+footer {
+    height: 100px;
+    background: #0026ff;
+}
+
+/*
+1. HTML : 박스에 '이름표'를 붙인다.
+- > > 클래스속성<div class="box" > </div >, 아이디속성
+
+2. CSS : 선택자를 사용해서 박스를 선택한다.
+- > > .box {
+    width: 100px;
+    height: 10px
+}
+
+클래스 선택자 : .box
+width : 스타일 속정
+500px : 스타일 값
+
+3. 스타일속성과 스타일값을 사용해서 스타일을 적용하고 박스를 배치한다.
+*/
+
+/*
+ 스타일
+    1. 박스의 배치와 관련된 스타일 속성
+    2. 스타일과 관련된 스타일 속성
+*/

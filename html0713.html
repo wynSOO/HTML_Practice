@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>입력양식 폼태그</title>
+    <style>
+        ul {
+            width: 280px;
+            margin: 50px auto;
+            list-style: none;
+        }
+
+        
+        
+        input{
+            padding-left:5px;
+            width:280px;
+            height:35px;
+            margin:5px 0;
+            border : 1px solid #4cff00
+        }
+        input:hover{background:#913ebd; opacity:0.35;}
+        input:focus{border:1px dashed #0026ff;background:#ff0000}
+
+        .btn{
+            width:80px;
+            height:35px;
+            text-shadow:1px 1px 2px #0026ff;
+            border-radius:5px;
+        }
+        .btn_sub{color:#4cff00; background:#808080}
+        .btn_rs{color:#ffd800; background:#913ebd}
+        .btn:hover{background:#913ebd;}
+
+    </style>
+</head>
+<body>
+    
+    <form method="post" action="">
+        
+        <ul>
+
+            <!-- 서버와 관련된 내용이 들어있다. submit 버튼을 클릭하면 데이터를 어떤 방법(method 속성)으로 어떤 파일에 전달(action 속성)할 것인지를 결정-->
+            <li><input type="text" name="name" placeholder="이름" autofocus required /> </li>
+            <li><input type="password" name="pw" placeholder="비번" /></li>
+
+
+            <li><input type="button" value="button" placeholder="버튼1" /></li>
+            <li><input type="checkbox" value="checkbox" placeholder="체크박스" /></li>
+            <li><input type="radio" value="radio" placeholder="라디오" /></li>
+
+            <li><input type="file" value="file" placeholder="파일첨부" /></li>
+
+            <li> <input type="hidden" name="hidden" placeholder="숨기기" /></li>
+            <li> <input type="search" name="serch" placeholder="찾기" /></li>
+            <li> <input type="url" name="url" placeholder="주소" /></li>
+            <li> <input type="email" name="email" placeholder="email" /></li>
+            <li> <input type="tel" name="tel" placeholder="전번" /></li>
+            <li> 생일:<input type="date" name="birth" placeholder="날짜" /></li>
+            <li> <input type="month" name="month" placeholder="달" /></li>
+            <li> <input type="week" name="week" placeholder="주" /></li>
+            <li> <input type="datetime" name="datetime" placeholder="날짜시간" /></li>
+            <li> <input type="submit" value="전송" placeholder="전송" class="btn btn_sub" /><input type="reset" value="reset" placeholder="초기화" class="btn btn_rs" /></li>
+          
+        </ul>
+       
+
+        <!--
+            type : text, password, button, file, checkbox, radio, submit, reset, hidden/
+                HTML5에서 추가된 type 속성값 : search, url, email, tel, date, month, week, datetime
+
+            autofocus : 커서위치지정
+            required : 필수입력
+
+
+    -->
+    </form>
+    
+</body>
+</html>

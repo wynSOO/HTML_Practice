@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>테이블and이미지</title>
+    <style>
+	.img-box{float:left; width:25%; padding:0 15px;box-sizing:border-box;}/*  box-sizing:border-box  박스의 패딩을 박스사이즈에 포함*/
+	img{width:100%}/*반응형 이미지*/
+    </style>
+</head>
+<body>
+    <p>테이블(표) 태그는 HTML5에서 사용하는 것을 '권장'하지 않는다. 
+	데이터 베이스에는 테이블이 있는데, 테이블에 저장되어 있는 데이터를 
+	가져올 때 비슷한 구조를 가지고 있는 테이블 태그를 사용한다.</p>
+	<p>Q. 3행 3열의 테이블을 만들자</p>
+	
+	<table>
+		<th>
+			<td >번호</td>
+			<td>제목</td>
+			<td>조회수</td>
+		</th>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+	<div class="ul-wrap">
+		<ul class = "block">
+			<li>번호</li>
+			<li>제목</li>
+			<li>조회수</li>
+		</ul>
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	
+	<p>이미지 태그는 이미지 콘텐츠를 웹브라우저에 표시할 떄 사용한다.</p>
+	<div class="img-box"> <img src="imgs/logo.png" alt="로고"/> </div>
+	<div class="img-box"> <img src="imgs/logo.png" alt="로고"/> </div>
+	<div class="img-box"> <img src="imgs/logo.png" alt="로고"/> </div>
+	<div class="img-box"> <img src="imgs/logo.png" alt="로고"/> </div>
+	
+</body>
+</html>

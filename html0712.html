@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>공간 분할 태그</title>
+    <style>
+        .box{width:250px;height:250px;background:#ef9ee4;border:3px solid #ffd800}
+        div:nth-child(2n+1){background:#0094ff}
+        span{display:inline-block;width:200px;height:200px;background:#b6ff00;border:3px dashed #ff0000}
+
+    </style>
+</head>
+<body>
+    <p>
+        웹 페이지는 공간 분할 태그를 사용하여 웹 페이지를 나눈다.
+        공간을 분할해야하는 이유?
+        공간을 분할해야 CSS로 원하는 레이아웃을 구성할 수 있기 때문이다.
+        공간을 분할하지 않으면 반응형 웹을 구현할 수 없다.
+
+        대표적인 공간 분할 태그 : div(블록형=width,height먹는데 개행),span(인라인형=width,height않되고,좌에서 우로 배치),img(인라인-블록형=width,heigth되고, 좌에서 우로 배치)
+
+        블록형 박스 : h1~h6,p,div
+        인라인형 박스 : a, i, input
+        인라인-블록형 박스 : img
+    </p>
+
+    <div class="box">div</div> <div class="box">div</div> <div class="box">div</div> <div class="box">div</div>
+
+    <span>span1</span><span>span2</span><span>span3</span><span>span4</span>
+
+    <p>
+        video, audio 태그를 사용하면 간단하게 동영상, 오디오를 재생할 수 있다.
+        모든 브라우저에서 표준홛가 이루어지지 않았다.
+        크로스 브라우징 코딩작업을 해주어야 한다.
+    </p>
+
+    <audio src="multi/Kalimba.ogg" autoplay controls></audio>
+
+    <!--크로스 브라우징 작업-->
+    <audio controls>
+        <source src="multi/Kalimba.mp3" type="audio/mp3" />
+        <source src="multi/Kalimba.ogg" type="audio/ogg" />
+    </audio>
+
+
+    <video src="multi/Wildlife.webm" width="640" autoplay controls></video>
+
+    <!--크로스 브라우징 작업-->
+    <video width="640" poster="imgs/man.jpg" controls>
+        <source src="multi/새로 데려 온 친구를 보고 쫄아버린 고양이.mp4" type="video/mp4" />
+        <source src="multi/새로 데려 온 친구를 보고 쫄아버린 고양이.webm" type="video/webm" />
+    </video>
+
+</body>
+</html>
+<!--
+	structure : WebContent를 담는다.
+
+	WebContent
+	1.text : <h1>~<h6>,<p>
+	2.image : <img src="상대경로">
+	3. video : <video src="" poster=""contrls>
+	4. audio : <audio src="">
+
+	* 공간분할태그 :<div>,<span>
+	1.블록형 : width(0),height(0),margin(0),padding(0), "개행"(위에서 아래로)
+	2.인라인형: width(X),height(X),margin(X),padding(X), "개행X"(좌에서 우로)
+	3.인라인-블록형 : width(0),height(0),margin(0),padding(0),"개행X"(좌에서 우로)
+
+		>>형변환방법 display:block,inline,inline-block
+-->

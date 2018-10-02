@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>font-face</title>
+    <link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: "nm";/*사용될 폰트 서체 이름을 지정*/
+            src:url('./fonts/NanumMyeongjo.eot');/*웹폰트 경로를 지정하여 가지고 옴*/
+            src:local(''),url('./fonts/NanumMyeongjo.woff')format('woff');
+        }
+        @font-face {
+            font-family: "ns"; /*사용될 폰트 서체 이름을 지정*/
+            src: url('./fonts/aSketchGothic.eot'); /*웹폰트 경로를 지정하여 가지고 옴*/
+            src: local(''),url('./fonts/aSketchGothic.woff')format('woff');
+        }
+        @font-face {
+            font-family: "nss"; /*사용될 폰트 서체 이름을 지정*/
+            src: url('./fonts/aSketchMyeongjo.eot'); /*웹폰트 경로를 지정하여 가지고 옴*/
+            src: local(''),url('./fonts/aSketchMyeongjo.woff')format('woff');
+        }
+        p.ng{
+            font-family: 'Gaegu', cursive;
+        }
+        p.nm {
+            font-family: 'nm', serif;
+            font-size:24px;color:#e8e8e8;
+            text-shadow:2px 2px 5px #000;/*CSS3에서 추가 : 글자 그림자 효과*/
+            background:#0026ff
+        }
+        p.ns {
+            font-family: 'ns', serif;
+        }
+        p.nss {
+            font-family: 'nss', serif;
+        }
+
+      /*  body {
+             background: url(./imgs/back2.png) repeat-y center center,url(./imgs/cloud.jpg) repeat left top;
+            background-size: 120px;
+            background-image: url(./imgs/back2.png),url(./imgs/cloud.jpg);
+            background-repeat:repeat-y,repeat;
+            background-position:center center;
+            
+        }*/
+        body {
+            background: url(./imgs/sky.jpg) repeat-x left center, url(./imgs/tree.jpg) repeat left top;
+            /* background-size: 120px;
+            background-image: url(./imgs/back2.png),url(./imgs/cloud.jpg);
+            background-repeat:repeat-y,repeat;
+            background-position:center center;*/
+        }
+    </style>
+</head>
+<body>
+    <p class="nm">
+        font-face는 서버의 디렉토리에 있는 서체를 웹 페이지의 서체로 지정하여 사용함으로 디바이스에 설치된 서체와 상관없이 같은 서체를 보여주는 것
+        https://fonts.google.com/
+    </p>
+    <p class="ng">
+        font-face는 서버의 디렉토리에 있는 서체를 웹 페이지의 서체로 지정하여 사용함으로 디바이스에 설치된 서체와 상관없이 같은 서체를 보여주는 것
+        https://fonts.google.com/
+    </p>
+    <p class="ns">
+        font-face는 서버의 디렉토리에 있는 서체를 웹 페이지의 서체로 지정하여 사용함으로 디바이스에 설치된 서체와 상관없이 같은 서체를 보여주는 것
+        https://fonts.google.com/
+    </p>
+    <p class="nss">
+        font-face는 서버의 디렉토리에 있는 서체를 웹 페이지의 서체로 지정하여 사용함으로 디바이스에 설치된 서체와 상관없이 같은 서체를 보여주는 것
+        https://fonts.google.com/
+    </p>
+</body>
+</html>
